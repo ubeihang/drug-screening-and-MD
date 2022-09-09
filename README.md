@@ -11,6 +11,13 @@
 6. Discovery Studio Visualizer 
 
 
-# 1. receptor  and ligands preparation
+# 1. Receptor  and Ligands preparation
 1) The complex crystal structure of Mpro (PDB ID:6lu7, download from  http://www.rcsb.org)
 2) The drug molecule data set (download from https://www.drugbank.ca/)
+
+#2.  Receptor and Ligands processing
+1) Mpro and inhibitor N3 isolated
+Tool: Pymol
+processing :  remove waters---add hydrogens--- gasteiger charges
+![image](https://user-images.githubusercontent.com/65847000/189270594-7072201f-5107-4cac-8e69-2b0d8fc85e01.png)
+
