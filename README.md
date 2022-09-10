@@ -11,18 +11,20 @@ toolkits used in this study:
 6. Discovery Studio Visualizer 
 
 
-# 1. Receptor  and Ligands preparation
+## 1. Receptor  and Ligands preparation
 1) The complex crystal structure of Mpro (PDB ID:6lu7, download from  http://www.rcsb.org)
 2) The drug molecule data set (download from https://www.drugbank.ca/)
 
-# 2.  Receptor and Ligands processing
+## 2.  Receptor and Ligands processing
 1) Mpro and inhibitor N3 isolated
 Tool: Pymol
 processing :  remove waters
+<br />
 ![image](https://user-images.githubusercontent.com/65847000/189270594-7072201f-5107-4cac-8e69-2b0d8fc85e01.png)
-
+<br />
 2) setting  grid box
 Tool: Autodock tools
+<br />
 ![image](https://user-images.githubusercontent.com/65847000/189270955-52cabb5c-c1a3-444d-90bd-0a25773ca1e3.png)
 
 3) Mpro standardization
@@ -34,7 +36,7 @@ Tool: Autodock tools
 (b) gasteiger charges  using Raccoon.
 (c) save as PDBQT format.
 
-# 3.  Molecular docking and Screening
+## 3.  Molecular docking and Screening
 
 Molecular docking using autodock vina, the specific process is as follows：
 
@@ -48,7 +50,7 @@ Molecular docking using autodock vina, the specific process is as follows：
 > python ./hb.py
 Extract the docked scoring results into one file.
 
-# 4. Dynamic simulation analysis 
+## 4. Dynamic simulation analysis 
 
 Dynamic simulation analysis using  gromacs-2022.2 version.
 
@@ -151,7 +153,7 @@ Based on the results of the previous command, you can view the amount of charge 
 Or use GPU acceleration, the command is:
  > gmx mdrun -deffnm md_result -gpu_id 5 -pin on -nt 10 -v 
 
-# 5. Molecular dynamics simulation analysis
+## 5. Molecular dynamics simulation analysis
  5.1 Recentering and Rewrapping Coordinates
   > gmx trjconv -s md_result.tpr -f md_result.xtc -o md_result_noPBC.xtc -pbc mol -ur compact
    > choose: 0 ("System") 
