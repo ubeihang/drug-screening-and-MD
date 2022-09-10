@@ -20,8 +20,7 @@ toolkits used in this study:
 1) Mpro and inhibitor N3 isolated
 Tool: Pymol
 processing :  remove waters <br />
-![image](https://user-images.githubusercontent.com/65847000/189270594-7072201f-5107-4cac-8e69-2b0d8fc85e01.png)
-
+![image](https://user-images.githubusercontent.com/65847000/189270594-7072201f-5107-4cac-8e69-2b0d8fc85e01.png) 
 2) setting  grid box
 Tool: Autodock tools <br />
 ![image](https://user-images.githubusercontent.com/65847000/189270955-52cabb5c-c1a3-444d-90bd-0a25773ca1e3.png)
@@ -82,11 +81,11 @@ Dynamic simulation analysis using  gromacs-2022.2 version.
 
  4.5 Define the box and add solvent and charged ions
  1)  Define the box
- > gmx editconf -f complex.gro -o newbox.gro -bt cubic -d 1.0
-   • -f: input complex structure file
-   • -o: output the structure file of the complex, containing information about the new box
-   • -bt: define box shape: triclinic (triclinic), cubic (cube), dodecahedron (dodecahedron), octahedron (octahedron)
-   • -d: define the distance from the edge of the box to the edge of the molecule (unit: nm), usually not less than 0.85 nm
+ > gmx editconf -f complex.gro -o newbox.gro -bt cubic -d 1.0 \
+   • -f: input complex structure file \
+   • -o: output the structure file of the complex, containing information about the new box \
+   • -bt: define box shape: triclinic (triclinic), cubic (cube), dodecahedron (dodecahedron), octahedron (octahedron) \
+   • -d: define the distance from the edge of the box to the edge of the molecule (unit: nm), usually not less than 0.85 nm \
 
  2) add solvent
  > gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro 
