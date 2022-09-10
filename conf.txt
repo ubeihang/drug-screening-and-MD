@@ -1,0 +1,12 @@
+receptor = a_line.pdbqt
+center_x = -10.807
+center_y = 12.541
+center_z = 68.917
+size_x = 30
+size_y = 30
+size_z = 30
+cpu = 20
+seed = 200
+exhaustiveness = 20
+energy_range = 6
+num_modes = 20
