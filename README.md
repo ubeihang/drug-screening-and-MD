@@ -1,6 +1,6 @@
 # drug-screening-and-MD
 
-这里提供了一个使用AutoDock vine进行批量分子对接，并对分子对接结果进行自动化处理的
+An overview is provided here, including batch molecular docking using autodock vina and molecular dynamics simulations using gromacs-2022.2.
 
 toolkits used in this study:
 1. AutoDock Tools
@@ -18,13 +18,11 @@ toolkits used in this study:
 ## 2.  Receptor and Ligands processing
 1) Mpro and inhibitor N3 isolated
 Tool: Pymol
-processing :  remove waters
-<br />
+processing :  remove waters <br />
 ![image](https://user-images.githubusercontent.com/65847000/189270594-7072201f-5107-4cac-8e69-2b0d8fc85e01.png)
-<br />
+
 2) setting  grid box
-Tool: Autodock tools
-<br />
+Tool: Autodock tools <br />
 ![image](https://user-images.githubusercontent.com/65847000/189270955-52cabb5c-c1a3-444d-90bd-0a25773ca1e3.png)
 
 3) Mpro standardization
