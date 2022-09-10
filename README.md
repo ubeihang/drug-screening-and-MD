@@ -156,6 +156,7 @@ Or use GPU acceleration, the command is:
  5.1 Recentering and Rewrapping Coordinates
   > gmx trjconv -s md_result.tpr -f md_result.xtc -o md_result_noPBC.xtc -pbc mol -ur compact
    > choose: 0 ("System") 
+   
  5.2 RMSD
  > gmx rms -s md_result.tpr -f md_result_noPBC.xtc -o rmsd_protein.xvg -tu ns
    > choose: 4 (backbone)--- 4(backbone)
