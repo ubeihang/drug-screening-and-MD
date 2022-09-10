@@ -9,6 +9,7 @@ toolkits used in this study:
 4. Raccoon
 5. gromacs-2022.2
 6. Discovery Studio Visualizer 
+7. qtgrace_v026
 
 
 ## 1. Receptor  and Ligands preparation
